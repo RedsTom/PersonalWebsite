@@ -30,6 +30,10 @@ li.stack-element {
 
     align-items: center;
 
+    @media screen and (max-width: 1660px) {
+        grid-template-columns: 1rem 10fr 0 5fr;
+    }
+
     * {
         overflow: hidden;
         text-overflow: ellipsis;

@@ -15,10 +15,22 @@ import Contact from './components/sections/Contact.vue';
     <Landing />
 
     <div class="content">
-      <Projects />
-      <Links />
-      <Stack />
-      <Contact />
+      <div class="grid f">
+        <div class="projects">
+          <Projects />
+        </div>
+        <div class="contact">
+          <Contact />
+        </div>
+      </div>
+      <div class="grid s">
+        <div class="links">
+          <Links />
+        </div>
+        <div class="stack">
+          <Stack />
+        </div>
+      </div>
     </div>
 
     <footer>
@@ -34,5 +46,23 @@ import Contact from './components/sections/Contact.vue';
 
 footer {
   text-align: center;
+}
+
+.grid {
+  display: grid;
+  grid-gap: 1rem;
+
+  &.f {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  &.s {
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @media screen and (max-width: 1400px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>
