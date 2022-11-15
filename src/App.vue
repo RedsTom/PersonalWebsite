@@ -34,7 +34,7 @@ import Contact from './components/sections/Contact.vue';
     </div>
 
     <footer>
-      This website was made with ❤️ by me using Vue.js. It is hosted on Github Pages.
+      This website was made with ❤️ by me using Vue.js. It is hosted on Netlify.
     </footer>
   </div>
 </template>
