@@ -18,7 +18,7 @@ const age = moment().diff('2006-07-06', 'years');
       <div class="quote-container">
         <p class="quote">
           <img draggable="false" alt="quote" src="../../assets/quote.svg" height="36" />
-          Toutes les grandes personnes ont d'abord été des enfants, mais peu d'entre elles s'en souviennent.
+          Grown-ups never understand anything by themselves, and it is tiresome for children to be always and forever explaining things to them.
         </p>
         <span class="author">Antoine de Saint Exupéry, <u>Le petit prince</u></span>
       </div>
