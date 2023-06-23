@@ -5,7 +5,8 @@ import gravenDev from '../../assets/graven-dev.svg';
 import privateRooms from '../../assets/private-rooms.svg';
 import youtube from '../../assets/youtube.jpg'
 import frlang from '../../assets/frlang.svg';
-import Separator from '../global/Separator.vue';
+import sfcord from "../../assets/sfcord.png"
+import brainfuck from "../../assets/brainfuck.png"
 import Splitter from '../global/Splitter.vue';
 </script>
 
@@ -24,6 +25,12 @@ import Splitter from '../global/Splitter.vue';
         <Project :bg="frlang" href="https://github.com/FrLang/">
             FrLang
         </Project>
+      <Project :bg="sfcord" href="https://github.com/SFCord/">
+        SFCord
+      </Project>
+      <Project :bg="brainfuck" href="https://github.com/RedsTom/BrainfuckInterpreter">
+        My Brainfuck Interpreter
+      </Project>
     </section>
 </template>
 
