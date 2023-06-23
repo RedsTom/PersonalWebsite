@@ -87,7 +87,7 @@ const technologies: StackElement[] = [
     },
 ]
 
-const editors: StackElement[] = [
+const softwares: StackElement[] = [
     {
         name: 'Eclipse',
         icon: 'fa-solid fa-code',
@@ -112,6 +112,12 @@ const editors: StackElement[] = [
         year: 2020,
         link: 'https://jetbrains.com/phpstorm'
     },
+    {
+        name: 'Figma',
+        icon: 'fa-brands fa-figma',
+        year: 2020,
+        link: 'https://figma.com'
+    }
 ]
 </script>
 
@@ -142,11 +148,11 @@ const editors: StackElement[] = [
         </div>
         <div class="splitter"></div>
         <div>
-            <h3><b>&lt;</b>Editors<b> /&gt;</b></h3>
+            <h3><b>&lt;</b>Softwares<b> /&gt;</b></h3>
 
             <ul>
-                <StackElement v-for="editor in editors" :icon="editor.icon" :year="editor.year" :link="editor.link"
-                    :key="editor.name">
+                <StackElement v-for="editor in softwares" :icon="editor.icon" :year="editor.year" :link="editor.link"
+                              :key="editor.name">
                     {{ editor.name }}
                 </StackElement>
             </ul>
