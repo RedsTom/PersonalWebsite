@@ -1,90 +1,97 @@
 <script setup lang="ts">
 interface Props {
-    icon: string;
-    year: number;
-    link?: string;
+  icon: string;
+  year: number;
+  link?: string;
+  first: boolean;
+  last: boolean;
 }
 
 const props = defineProps<Props>();
 </script>
 
 <template>
-    <li class="stack-element">
-        <font-awesome-icon :icon="props.icon" />
-        <p>
-            <slot />
-            <a v-if="props.link" :href="props.link" target="_blank">
-                <font-awesome-icon icon="fa-solid fa-link" />
-            </a>
-        </p>
-        <div class="splitter"></div>
-        <span><b>{{ props.year }}</b></span>
-    </li>
+  <li class="stack-element">
+    <font-awesome-icon :icon="props.icon"/>
+    <p>
+      <slot/>
+      <a v-if="props.link" :href="props.link" target="_blank">
+        <font-awesome-icon icon="fa-solid fa-link"/>
+      </a>
+    </p>
+    <div class="splitter" :class="{first,last}"></div>
+    <span><b>{{ props.year }}</b></span>
+  </li>
 </template>
 
 <style lang="scss">
 li.stack-element {
-    display: grid;
-    grid-template-columns: 1rem 10fr 0 3fr;
-    gap: 1rem;
+  display: grid;
+  grid-template-columns: 1rem 10fr 0 3fr;
+  gap: 1rem;
 
+  align-items: center;
+
+  @media screen and (max-width: 1660px) {
+    grid-template-columns: 1rem 10fr 0 5fr;
+  }
+
+  * {
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  svg {
+    display: flex;
     align-items: center;
 
-    @media screen and (max-width: 1660px) {
-        grid-template-columns: 1rem 10fr 0 5fr;
+    path {
+      fill: var(--red)
     }
+  }
 
-    * {
-        overflow: hidden;
-        text-overflow: ellipsis;
+  span {
+    text-align: end;
+  }
+
+  p {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+
+    a {
+      transition: .2s;
+
+      &:hover {
+        transform: scale(1.25);
+      }
     }
 
     svg {
-        display: flex;
-        align-items: center;
+      font-size: 1rem;
 
-        path {
-            fill: var(--red)
-        }
+      path {
+        fill: var(--green);
+      }
     }
+  }
 
-    span {
-        text-align: end;
+  .splitter {
+    width: .25rem;
+    height: 100%;
+
+    background-color: var(--text);
+
+    &.first {
+      border-radius: 9999px 9999px 0 0;
     }
-
-    p {
-        display: flex;
-        gap: .5rem;
-        align-items: center;
-
-        a {
-            transition: .2s;
-
-            &:hover {
-                transform: scale(1.25);
-            }
-        }
-
-        svg {
-            font-size: 1rem;
-
-            path {
-                fill: var(--green);
-            }
-        }
+    &.last {
+      border-radius: 0 0 9999px 9999px;
     }
+  }
 
-    .splitter {
-        width: .25rem;
-        height: 100%;
-
-        border-radius: 9999px;
-
-        background-color: var(--text);
-    }
-
-    b {
-        color: var(--blue);
-    }
+  b {
+    color: var(--blue);
+  }
 }
 </style>
