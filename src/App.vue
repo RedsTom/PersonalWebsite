@@ -9,26 +9,26 @@ import Contact from './components/sections/Contact.vue';
 </script>
 
 <template>
-  <Navbar />
+  <Navbar/>
 
   <div class="content">
-    <Landing />
+    <Landing/>
 
     <div class="content">
       <div class="grid f">
         <div class="projects">
-          <Projects />
+          <Projects/>
         </div>
         <div class="contact">
-          <Contact />
+          <Contact/>
         </div>
       </div>
       <div class="grid s">
         <div class="links">
-          <Links />
+          <Links/>
         </div>
         <div class="stack">
-          <Stack />
+          <Stack/>
         </div>
       </div>
     </div>
@@ -42,10 +42,16 @@ import Contact from './components/sections/Contact.vue';
 <style scoped lang="scss">
 .content {
   padding: 2rem;
+
+  @media screen and (max-width: 500px) {
+    padding: 2rem .5rem;
+  }
 }
 
 footer {
   text-align: center;
+
+  padding: 0 3rem;
 }
 
 .grid {
