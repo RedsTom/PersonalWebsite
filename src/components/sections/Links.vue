@@ -20,7 +20,7 @@ import Splitter from '../global/Splitter.vue';
             </a>
             <a href="https://discord.com/users/723471302123323434" class="link" target="_blank">
                 <font-awesome-icon icon="fa-brands fa-discord" />
-                RedsTom#4616
+                redstom
             </a>
             <a href="https://twitch.tv/mr_redstom" class="link" target="_blank">
                 <font-awesome-icon icon="fa-brands fa-twitch" />
