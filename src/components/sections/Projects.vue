@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import Project from '../global/Project.vue';
 
-import gravenDev from '../../assets/graven-dev.svg';
+import findTheCoin from '../../assets/find-the-coin.png';
 import privateRooms from '../../assets/private-rooms.svg';
 import youtube from '../../assets/youtube.jpg'
 import frlang from '../../assets/frlang.svg';
@@ -13,8 +13,8 @@ import Splitter from '../global/Splitter.vue';
 <template>
     <Splitter>My projects</Splitter>
     <section id="projects">
-        <Project :bg="gravenDev" href="https://discord.gg/graven">
-            Graven - Développement
+        <Project :bg="findTheCoin" href="https://findthecoin.redstom.me/">
+            Find the Coins
         </Project>
         <Project :bg="privateRooms" href="https://github.com/GravenDev/PrivateRooms">
             Private Rooms
