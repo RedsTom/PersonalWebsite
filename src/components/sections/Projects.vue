@@ -5,8 +5,10 @@ import findTheCoin from '../../assets/find-the-coin.png';
 import privateRooms from '../../assets/private-rooms.svg';
 import youtube from '../../assets/youtube.jpg'
 import frlang from '../../assets/frlang.svg';
-import sfcord from "../../assets/sfcord.png"
-import brainfuck from "../../assets/brainfuck.png"
+import sfcord from '../../assets/sfcord.png';
+import brainfuck from '../../assets/brainfuck.png';
+import developpons from '../../assets/developpons.png';
+
 import Splitter from '../global/Splitter.vue';
 </script>
 
@@ -25,27 +27,30 @@ import Splitter from '../global/Splitter.vue';
         <Project :bg="frlang" href="https://github.com/FrLang/">
             FrLang
         </Project>
-      <Project :bg="sfcord" href="https://github.com/SFCord/">
-        SFCord
-      </Project>
-      <Project :bg="brainfuck" href="https://github.com/RedsTom/BrainfuckInterpreter">
-        My Brainfuck Interpreter
-      </Project>
+        <Project :bg="sfcord" href="https://github.com/SFCord/">
+            SFCord
+        </Project>
+        <Project :bg="brainfuck" href="https://github.com/RedsTom/BrainfuckInterpreter">
+            My Brainfuck Interpreter
+        </Project>
+        <Project :bg="developpons" href="https://discord.gg/RuRT6aVhHu">
+            My Discord Server
+        </Project>
     </section>
 </template>
 
 <style lang="scss" scoped>
 section {
-    padding: 2rem;
+  padding: 2rem;
 }
 
 section#projects {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
 
-    flex-wrap: wrap;
-    gap: 2rem;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 </style>
