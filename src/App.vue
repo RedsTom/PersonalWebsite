@@ -6,6 +6,8 @@ import Projects from './components/sections/Projects.vue';
 import Links from './components/sections/Links.vue';
 import Stack from './components/sections/Stack.vue';
 import Contact from './components/sections/Contact.vue';
+
+import sign from './assets/signature.png';
 </script>
 
 <template>
@@ -34,7 +36,7 @@ import Contact from './components/sections/Contact.vue';
     </div>
 
     <footer>
-      This website was made with ❤️ by me using Vue.js. It is hosted on Netlify.
+        <img :src="sign" alt="sign" id="sign" draggable="false" />
     </footer>
   </div>
 </template>
@@ -70,5 +72,9 @@ footer {
     display: flex;
     flex-direction: column;
   }
+}
+
+#sign {
+  height: 10rem;
 }
 </style>
