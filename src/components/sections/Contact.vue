@@ -8,7 +8,7 @@ const body = ref('');
 const send = () => {
   if (subject.value && body.value) {
     // @ts-ignore
-    window.location = `mailto:contact@redstom.me?subject=${subject.value}&body=${body.value.replace('\n', '%0D%0A')}`;
+    window.location = `mailto:tom.frefre.13@gmail.com?subject=${subject.value}&body=${body.value.replace('\n', '%0D%0A')}`;
   }
 }
 </script>
