@@ -8,6 +8,7 @@ import Stack from './components/sections/Stack.vue';
 import Contact from './components/sections/Contact.vue';
 
 import sign from './assets/signature.png';
+import ScholarCareer from "./components/sections/ScholarCareer.vue";
 </script>
 
 <template>
@@ -21,8 +22,8 @@ import sign from './assets/signature.png';
         <div class="projects">
           <Projects/>
         </div>
-        <div class="contact">
-          <Contact/>
+        <div class="school-career">
+          <ScholarCareer/>
         </div>
       </div>
       <div class="grid s">
