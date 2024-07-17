@@ -15,7 +15,7 @@ import Splitter from '../global/Splitter.vue';
 <template>
     <Splitter>My projects</Splitter>
     <section id="projects">
-        <Project :bg="findTheCoin" href="https://findthecoin.redstom.tech/">
+        <Project :bg="findTheCoin" href="https://findthecoin.redstom.fr/">
             Find the Coins
         </Project>
         <Project :bg="privateRooms" href="https://github.com/GravenDev/PrivateRooms">
