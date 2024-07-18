@@ -19,7 +19,9 @@ import Splitter from "../global/Splitter.vue";
         </div>
         <div class="graduation">
           <font-awesome-icon :icon="['fas', 'graduation-cap']"/>
-          Brevet des collèges
+          <span>
+            Brevet des collèges mention <u>Très Bien</u> (19.9/20)
+          </span>
         </div>
       </div>
       <div class="high-school-thiers">
@@ -43,7 +45,13 @@ import Splitter from "../global/Splitter.vue";
         </div>
         <div class="graduation">
           <font-awesome-icon :icon="['fas', 'graduation-cap']"/>
-          Baccalauréat <i>(To come)</i>
+          <span>
+            Baccalauréat mention <u>Bien</u> (15.8/20)<br/>
+            <ul>
+              <li>Maths : <u>20/20</u></li>
+              <li>PH-CH : <u>20/20</u></li>
+            </ul>
+          </span>
         </div>
       </div>
     </div>
@@ -59,6 +67,16 @@ import Splitter from "../global/Splitter.vue";
   justify-content: center;
 
   padding: 1.5rem;
+}
+
+u {
+  padding: 0;
+  margin: 0;
+
+  text-decoration: none;
+  color: var(--red);
+
+  display: inline-flex;
 }
 
 #experiences {
@@ -118,9 +136,19 @@ import Splitter from "../global/Splitter.vue";
       display: flex;
       align-items: center;
 
+      padding: .5rem 0;
+
       gap: .5rem;
+
+      span {
+        display: block;
+      }
     }
+
   }
+}
+ul {
+  margin-left: 1rem;
 }
 </style>
 <style lang="scss">
