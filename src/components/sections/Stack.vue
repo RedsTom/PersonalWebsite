@@ -85,6 +85,18 @@ const technologies: StackElement[] = [
     year: 2021,
     link: 'https://reactjs.org/'
   },
+  {
+    name: 'Docker',
+    icon: 'fa-brands fa-docker',
+    year: 2022,
+    link: 'https://docker.com'
+  },
+  {
+    name: 'Angular',
+    icon: 'fa-brands fa-angular',
+    year: 2023,
+    link: 'https://angular.dev'
+  }
 ]
 
 const softwares: StackElement[] = [
@@ -117,6 +129,11 @@ const softwares: StackElement[] = [
     icon: 'fa-brands fa-figma',
     year: 2020,
     link: 'https://figma.com'
+  },
+  {
+    name: 'Vim Shortcuts',
+    icon: 'fa-solid fa-code',
+    year: 2022
   }
 ]
 </script>
