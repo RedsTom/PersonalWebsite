@@ -8,32 +8,6 @@ import Splitter from "../global/Splitter.vue";
 
   <div class="content">
     <div id="experiences">
-      <div class="middle-school">
-        <div class="location">
-          <font-awesome-icon icon="fa-solid fa-location-pin"/>
-          <span>Collège Saint Joseph les Maristes</span>
-        </div>
-        <div class="duration">
-          <font-awesome-icon icon="fa-solid fa-calendar"/>
-          <span>2017 - 2021</span>
-        </div>
-        <div class="graduation">
-          <font-awesome-icon :icon="['fas', 'graduation-cap']"/>
-          <span>
-            Brevet des collèges mention <u>Très Bien</u> (19.9/20)
-          </span>
-        </div>
-      </div>
-      <div class="high-school-thiers">
-        <div class="location">
-          <font-awesome-icon icon="fa-solid fa-location-pin"/>
-          <span>Lycée Saint Joseph les Maristes</span>
-        </div>
-        <div class="duration">
-          <font-awesome-icon icon="fa-solid fa-calendar"/>
-          <span>2021 - 2022</span>
-        </div>
-      </div>
       <div class="high-school-thiers">
         <div class="location">
           <font-awesome-icon icon="fa-solid fa-location-pin"/>
@@ -51,6 +25,35 @@ import Splitter from "../global/Splitter.vue";
               <li>Maths : <u>20/20</u></li>
               <li>PH-CH : <u>20/20</u></li>
             </ul>
+          </span>
+        </div>
+      </div>
+      
+      <div class="high-school-thiers">
+        <div class="location">
+          <font-awesome-icon icon="fa-solid fa-location-pin"/>
+          <span>Lycée Saint Joseph les Maristes</span>
+        </div>
+        <div class="duration">
+          <font-awesome-icon icon="fa-solid fa-calendar"/>
+          <span>2021 - 2022</span>
+        </div>
+      </div>
+    
+      
+      <div class="middle-school">
+        <div class="location">
+          <font-awesome-icon icon="fa-solid fa-location-pin"/>
+          <span>Collège Saint Joseph les Maristes</span>
+        </div>
+        <div class="duration">
+          <font-awesome-icon icon="fa-solid fa-calendar"/>
+          <span>2017 - 2021</span>
+        </div>
+        <div class="graduation">
+          <font-awesome-icon :icon="['fas', 'graduation-cap']"/>
+          <span>
+            Brevet des collèges mention <u>Très Bien</u> (19.9/20)
           </span>
         </div>
       </div>
