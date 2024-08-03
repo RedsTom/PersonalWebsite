@@ -8,6 +8,7 @@ import frlang from '../../assets/frlang.svg';
 import sfcord from '../../assets/sfcord.png';
 import brainfuck from '../../assets/brainfuck.png';
 import developpons from '../../assets/developpons.png';
+import blog from '../../assets/blog.png';
 
 import Splitter from '../global/Splitter.vue';
 </script>
@@ -15,6 +16,9 @@ import Splitter from '../global/Splitter.vue';
 <template>
     <Splitter>My projects</Splitter>
     <section id="projects">
+        <Project :bg="blog" href="https://blog.redstom.fr/">
+            My Blog
+        </Project>
         <Project :bg="findTheCoin" href="https://findthecoin.redstom.fr/">
             Find the Coins
         </Project>
