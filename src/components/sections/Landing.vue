@@ -11,7 +11,7 @@ const age = moment().diff('2006-07-06', 'years');
       <h1>
         Hi, I'm <b>RedsTom</b>:<br class="breakline"/>
         a <b>
-          <Switch :elements="['java', 'web', 'spring', 'junior', 'vue.js']" :delay="10_000" />
+          <Switch :elements="['java', 'web', 'spring', 'junior', 'vue.js', 'angular', 'navbar', 'typescript', 'lazy']" :delay="7_500" />
         </b> developer<b>.</b>
       </h1>
 
