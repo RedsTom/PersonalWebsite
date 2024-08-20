@@ -49,12 +49,14 @@ section {
 }
 
 section#projects {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 256px);
   justify-content: space-evenly;
   align-items: center;
   align-content: center;
 
-  flex-wrap: wrap;
   gap: 2rem;
+
+  width: 100%;
 }
 </style>
