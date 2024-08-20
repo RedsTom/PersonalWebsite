@@ -8,6 +8,22 @@ import Splitter from "../global/Splitter.vue";
 
   <div class="content">
     <div id="experiences">
+      <div class="license-luminy">
+        <div class="location">
+          <font-awesome-icon icon="fa-solid fa-location-pin" />
+          <span>Université d'<u>Aix-Marseille</u> - <u>Luminy</u></span>
+        </div>
+        <div class="duration">
+          <font-awesome-icon icon="fa-solid fa-calendar" />
+          2024 - Présent
+        </div>
+        <div class="graduation">
+          <font-awesome-icon :icon="['fas', 'graduation-cap']"/>
+          <span>
+            Double License <u>Maths-Info</u>
+          </span>
+        </div>
+      </div>
       <div class="high-school-thiers">
         <div class="location">
           <font-awesome-icon icon="fa-solid fa-location-pin"/>
