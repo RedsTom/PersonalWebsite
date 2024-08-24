@@ -28,7 +28,7 @@ const age = moment().diff('2006-07-06', 'years');
       <ul>
         <li>🎂 {{age}} years old<b>.</b></li>
         <li>📍 Marseille, France<b>.</b></li>
-        <li>🏫 Lycée Thiers<b>.</b></li>
+        <li>🏫 Université Aix-Marseille<b>.</b></li>
       </ul>
     </div>
   </section>
