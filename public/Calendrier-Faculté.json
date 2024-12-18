@@ -1,0 +1,19 @@
+{
+  "css": ".CALENDAR-INDEX-0 { background-color: #26a269 !important; }\n.CALENDAR-INDEX-1, .CALENDAR-INDEX-2 { background-color: #e66100 !important; }\n.dhx_body,.dhx_title { background-color: transparent !important; }",
+  "ending_hour": "20",
+  "language": "fr",
+  "start_of_week": "work",
+  "starting_hour": "8",
+  "tab": "week",
+  "tabs": [
+    "week",
+    "day"
+  ],
+  "timezone": "Europe/Paris",
+  "title": "Cours Groupe 1",
+  "url": [
+    "https://calendar.google.com/calendar/ical/cb8922e418c45331678fac1cbb3df2064a21629be461f51a077e8a37837e358c%40group.calendar.google.com/public/basic.ics",
+    "https://ade-web-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?projectId=8&resources=2651&calType=ical&firstDate=2024-09-01&lastDate=2025-01-12",
+    "https://ade-web-consult.univ-amu.fr/jsp/custom/modules/plannings/anonymous_cal.jsp?projectId=8&resources=163760&calType=ical&firstDate=2025-01-01&lastDate=2025-07-31"
+  ]
+}
