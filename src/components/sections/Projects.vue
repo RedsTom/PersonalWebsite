@@ -5,10 +5,7 @@ import findTheCoin from '../../assets/find-the-coin.png';
 import privateRooms from '../../assets/private-rooms.svg';
 import youtube from '../../assets/youtube.jpg'
 import frlang from '../../assets/frlang.svg';
-import sfcord from '../../assets/sfcord.png';
-import brainfuck from '../../assets/brainfuck.png';
-import developpons from '../../assets/developpons.png';
-import blog from '../../assets/blog.png';
+import tidalcord from '../../assets/tidalcord.png';
 
 import Splitter from '../global/Splitter.vue';
 </script>
@@ -16,8 +13,8 @@ import Splitter from '../global/Splitter.vue';
 <template>
     <Splitter>My projects</Splitter>
     <section id="projects">
-        <Project :bg="blog" href="https://blog.redstom.fr/">
-            My Blog
+        <Project :bg="tidalcord" href="https://github.com/RedsTom/Tidalcord/">
+            TidalCord
         </Project>
         <Project :bg="findTheCoin" href="https://findthecoin.redstom.fr/">
             Find the Coins
@@ -30,15 +27,6 @@ import Splitter from '../global/Splitter.vue';
         </Project>
         <Project :bg="frlang" href="https://github.com/FrLang/">
             FrLang
-        </Project>
-        <Project :bg="sfcord" href="https://github.com/SFCord/">
-            SFCord
-        </Project>
-        <Project :bg="brainfuck" href="https://github.com/RedsTom/BrainfuckInterpreter">
-            My Brainfuck Interpreter
-        </Project>
-        <Project :bg="developpons" href="https://discord.gg/RuRT6aVhHu">
-            My Discord Server
         </Project>
     </section>
 </template>
