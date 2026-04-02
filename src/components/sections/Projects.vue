@@ -4,7 +4,7 @@ import Project from '../global/Project.vue';
 import findTheCoin from '../../assets/find-the-coin.png';
 import privateRooms from '../../assets/private-rooms.svg';
 import youtube from '../../assets/youtube.jpg'
-import frlang from '../../assets/frlang.svg';
+import grillemaker from '../../assets/grillemaker.png';
 import tidalcord from '../../assets/tidalcord.png';
 
 import Splitter from '../global/Splitter.vue';
@@ -25,8 +25,8 @@ import Splitter from '../global/Splitter.vue';
         <Project :bg="youtube" href="https://youtube.com/c/RedsTom_">
             YouTube Channel
         </Project>
-        <Project :bg="frlang" href="https://github.com/FrLang/">
-            FrLang
+        <Project :bg="grillemaker" href="https://grillemaker.redstom.fr/">
+            Grille Maker
         </Project>
     </section>
 </template>
